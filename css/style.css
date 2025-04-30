@@ -245,3 +245,190 @@ textarea {
   }
 }
 
+/* 
+  EL PROYECTO COMIENZA AQUÍ
+*/
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --secundary-font: "Playfair Display", serif;
+  --black: #313131;
+  --brown: #9B9A78;
+  --max-width-page: 1400px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--primary-font);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-width-page);
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.navPrincipal ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 50px;
+
+}
+
+.navPrincipal a {
+  color: var(--black);
+  text-decoration: none;
+
+}
+
+.navPrincipal a:hover {
+  color: var(--brown);
+
+}
+
+.navPrincipal a.active {
+  color: var(--brown);
+}
+
+.login ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.login a {
+  color: var(--black);
+  text-decoration: none;
+
+}
+
+.login a.active {
+  color: var(--brown);
+}
+
+a.button {
+  display: inline-block;
+  background-color: var(--brown);
+  color: white;
+  padding: 14px 30px;
+  transition: all .5s ease;
+}
+
+a.button:hover {
+  
+  background-color: var(--black);
+  
+}
+
+section.hero {
+  display: flex;
+  justify-content: flex-end;
+  background-image: url(../img/Placeholder-1.png);
+  background-repeat: no-repeat;  
+  background-size: 60%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.hero__content {
+  width: 50%;
+  box-sizing: border-box;
+  margin-bottom: ;
+}
+
+.hero__header {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  padding: 10px;
+}
+
+.hero h1 {
+  font-family: var(--secundary-font);
+  font-size: 48px;
+  line-height: 72px;
+  max-width: 500px;
+}
+
+.hero h1::before {
+  content: '';
+  height: 8px;
+  width: 72px;
+  position: absolute;
+  background-color: var(--brown);
+  right: 77px;
+  top: 118px;
+}
+
+.hero__header p {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--brown);
+}
+
+.hero__list {
+
+}
+
+.hero__list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 60%;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+
+.hero__list ul li {
+  font-weight: 300;
+  background-image: url(../img/Check.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 20px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.coworking-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 224px;
+  padding-left: 96px;
+  padding-right: 96px;
+
+}
+
+.coworking-info img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.coworking-info h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.coworking-info p {
+  font-weight: 300;
+  color: var(--brown);
+} 
